@@ -17,7 +17,6 @@ public class Army {
 	List<Plane> warplanesList;
 
 	public Army(Integer soldiersNr, Integer tanksNr, Integer warshipsNr, Integer submarinsNr, Integer warplanesNr) {
-		// Toata existenta acelui obiect depinde de fire power
 		DefaultArmyService defaultArmyService = new DefaultArmyService();
 		this.soldiersList = defaultArmyService.buildSoldiersArmy(soldiersNr);
 		this.tanksList = defaultArmyService.buildTanksArmy(tanksNr);
